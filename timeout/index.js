@@ -16,7 +16,7 @@ import {fromStdIn} from '../utility';
 console.log('Please input your password quickly!')
 
 fromStdIn().pipe(
-  take(10)
+  take(10),
   timeout(2000)
 )
 .subscribe(a => console.log(a));
